@@ -1,0 +1,82 @@
+<web-app>
+	<servlet>
+		<servlet-name>register-demo</servlet-name>
+		<servlet-class>backend.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register-demo</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>login-demo</servlet-name>
+		<servlet-class>backend.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login-demo</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logout-demo</servlet-name>
+		<servlet-class>backend.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout-demo</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editabout-demo</servlet-name>
+		<servlet-class>backend.EditAbout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editabout-demo</servlet-name>
+		<url-pattern>/edit-about</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addEducation-demo</servlet-name>
+		<servlet-class>backend.AddEducationDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addEducation-demo</servlet-name>
+		<url-pattern>/add_education</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editEducation-demo</servlet-name>
+		<servlet-class>backend.EditEducation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editEducation-demo</servlet-name>
+		<url-pattern>/edit_education</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addExperience-demo</servlet-name>
+		<servlet-class>backend.AddExperienceDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addExperience-demo</servlet-name>
+		<url-pattern>/add_experience</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editExperience-demo</servlet-name>
+		<servlet-class>backend.EditExperience</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editExperience-demo</servlet-name>
+		<url-pattern>/edit_experience</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>filter-demo</filter-name>
+		<filter-class>backend.ValidationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter-demo</filter-name>
+		<url-pattern>/reg</url-pattern>
+	</filter-mapping>
+</web-app>
